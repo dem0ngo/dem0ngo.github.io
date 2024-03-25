@@ -26,7 +26,6 @@ With that explained, lets get into the specific problem and solution.
 
 ## The Problem
 There is a mismatch between the version of a library your system is running and the one that a package depends on which results in an error like this:
-
 ```
 node: error while loading shared libraries: libicui18n.so.73: cannot open shared object file: No such file or directory
 ```
@@ -67,14 +66,14 @@ nvim ~/.zshrc
 > Check which shell is being used by running `ps -p $$` and looking in the last column of the output. If you aren't using zsh there is a good chance you are using bash. In that case the command will look like the following: `nvim ~/.bashrc`
 {: .prompt-tip}
 
-Once you're editing the correct configuration file you can add a new line anywhere you like (generally the bottom of the file is a good option) and add the following line:
+Once you're editing the correct configuration file you can add the following line anywhere you like (generally the bottom of the file is a good option):
 ```
-export LD_LIBRARY_PATH=~/.alternate_packages/PACKAGE_NAME/DIR/TO/LIB/FILES:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=~/PACKAGES_FOLDER/PACKAGE_NAME/DIR/TO/LIB/FILES:$LD_LIBRARY_PATH
 ```
 
 In this example it would be:
 ```
-export LD_LIBRARY_PATH=~/.alternate_packages/PACKAGE_NAME/pkg/icu/usr/lib:$LD_LIBRARY_PATH`
+export LD_LIBRARY_PATH=~/.alternate_packages/icu_73/pkg/icu/usr/lib:$LD_LIBRARY_PATH`
 ```
 
 ![Zsh Config](/assets/img/lib_versions/zsh_config.png)
