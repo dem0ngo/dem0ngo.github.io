@@ -16,10 +16,11 @@ timezone: America/Denver
 
 title: Matt Goulding's Blog # the main title
 
-tagline: Random articles about random stuff # it will display as the sub-title
+tagline: Technical articles about cybersecurity, linux, and other cool stuff
+# it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Technical articles about cybersecurity, linux, and other cool stuff
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -76,7 +77,7 @@ theme_mode: [dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://media.licdn.com/dms/image/D5635AQHFwpO-oXuKCA/profile-framedphoto-shrink_200_200/0/1705000923048?e=1712001600&v=beta&t=lUOuime2WeBQhjXoBiepKciuxzRhNMMc_J_4Q6uH0I0
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
