@@ -8,6 +8,9 @@ tags:
   - arch
   - pacman
 ---
+> In light of [recent events](https://en.wikipedia.org/wiki/XZ_Utils_backdoor) emphasizing how libraries can be used maliciously, I'd recommend following this guide with caution. If you aren't absolutely certain that the older package is safe, just wait for official updates!
+{: .prompt-danger }
+
 Recently I decided to start using Linux as my daily driver. I found that using Kali virtual machines were just too slow and clunky for the things I'm trying do whether that's learning how to use Burpsuite or practicing in a lab environment like Hack the Box. 
 
 After doing some research I settled on Arch *specifically* so that I can say, "I use Arch by the way." Jokes aside, I loved the customization and the challenge it offered and so I spent more than a few hours configuring it just how I liked.  One of the other reasons I liked it was because of its package manager "pacman". It has a huge number of packages avaialable officially and even more on the user submitted repository which means most programs just work when I try and install them. The key word there is **most**.
